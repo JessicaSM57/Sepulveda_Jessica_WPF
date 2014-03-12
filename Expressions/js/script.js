@@ -1,7 +1,8 @@
-//Expressions - Concatenating Strings
+//Expressions - Assignment Operators
 
-var a = 6;
-var b = 7;
+var a = 3;
+a --; // same as a = a + 1 // a += 1
+console.log(a);
 
-var result = a + b;
-console.log(result);
+
+//Notes: Storage container is always on the left. Assignment operator is an equal sign.
