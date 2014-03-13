@@ -6,7 +6,7 @@
 var income = prompt("According to NoMoreDebts.org, you should only spend 5% of your income on eating out, entertainment, and other discretionary expenses. \nPlease enter your adjusted monthly income for February.");
 
 
-//Collect information from user:
+//Collect information from user; these are the givens.
 var eatingOut = prompt("How much did you spend on eating out in February?");
 var entertain = prompt("How much money did you spend on entertainment in February?");
 var other = prompt("How much did you spend on other items including alcohol, gaming, hair cuts, hobbies, and recreation?");
@@ -16,5 +16,5 @@ var totalSpent = Number(eatingOut) + Number(entertain) + Number(other); //Castin
 var dif = totalSpent / income * 100 - 5; //Calculates percentage spent frivolously and compares it to the recommendation.
 var recommended = income * .05; //Calculates how much should have been spent.
 
-//Set up the detailed answer the detailed answer in console, but it can be easily changed to alert mode.
+//Set up the detailed answer the detailed answer in console, but it can be easily changed to alert mode. This is an example of concatenating strings.
 console.log("You spent $" + totalSpent + " on frivolous items in February; which is " + dif + "% more than the 5% recommended. In a month when you make $" + income + " you should only spend $" + recommended + " on the aforementioned discretionary items.");
