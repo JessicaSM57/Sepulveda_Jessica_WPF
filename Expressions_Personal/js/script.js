@@ -13,8 +13,8 @@ var other = prompt("How much did you spend on other items including alcohol, gam
 
 //Create an equation that calculates how much money you have left in the month.
 var totalLeft = income - eatingOut - entertain - other;
-var totalSpent = (income - totalLeft) / income;
-var totalPercent = totalSpent
+var totalSpent = income - totalLeft;
+var dif = totalSpent / income * 100 - 5;
 
 //Set up the alert with the answer.
-//alert ("You spent $" + totalSpent + "on frivolous items in February; which is " + + "% more than the 5% recommended.");
+alert("You spent $" + totalSpent + " on frivolous items in February; which is " + dif + "% more than the 5% recommended.");
