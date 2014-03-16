@@ -1,6 +1,6 @@
 //Conditional Logic -- If and else : Choosing between 2 blocks of code
 
-var kidHeight = 47;
+var kidHeight = 48;
 var minHeight = 48;
 
 //if the child is old enough, print to the console "you can ride!"
