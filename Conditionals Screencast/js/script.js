@@ -1,6 +1,6 @@
 //Conditional Logic -- Relational Expressions
 
-var kidHeight = 40;
+var kidHeight = 62;
 var minHeight = 48;
 
 //if the child is old enough, print to the console "you can ride!"
