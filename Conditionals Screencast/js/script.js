@@ -1,11 +1,11 @@
 //Conditional Logic -- Logical Operators
 
-var budget = 300;
-var iPhonePrice = 199.99
-var paycheck = 200
+var budget = 100;
+var iPhonePrice = 199.99;
+var wonLottery = true;
 
-//if the price of the phone is less than our budget AND if our paycheck is over 300
-if(iPhonePrice && paycheck < 300){ //&& is for going in between relational expressions not to be used as an operator
+// OR operator states that as long as one of these things is true then the whole thing is going to be true; if we win the lottery then it doesnt matter what the budget is going to be; the OR operator only needs 1 of these to be true in order for the whole thing to be true
+if(iPhonePrice < budget || wonLottery === true){
     console.log("We can buy the phone!");
 }else{
     console.log("No phone for you!");
