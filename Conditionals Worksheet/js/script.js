@@ -1,12 +1,14 @@
 // Jessica Sepulveda -- 03/17/14 -- Conditionals Worksheet
 
-//Stuff your face I
-//Qualifying weight for heavyweight division of contest?
+//Celsius to Fahrenheit converter
 
-var weight = prompt("Please enter your weight."); //Participant must be 250 pounds minimum to qualify
+var temp= [Number (prompt("Type in the numeric value of the temperature (i.e. 32).")), prompt("Type in capital F for Fahrenheit or capital C for Celsius.")];
 
-if(weight >= 250){//Person must be 250 pounds or more to qualify
-    console.log("The competitor qualifies for the heavyweight division."); //Prints if this condition is met
-}else{ //Sets up condition for result if below 250 pounds
-    console.log("The competitor needs to gain some weight!"); //Prints if the condition is NOT met
+var fToC = (temp[0] - 32) * 5 / 9;
+var cToF = temp[0] * 9 / 5 + 32;
+
+if(temp[1] == "F"){
+    console.log("The temperature is " + fToC + " degrees Celsius.");
+}else{
+    console.log("The temperature is " +cToF+ " degrees Fahrenheit.");
 }
