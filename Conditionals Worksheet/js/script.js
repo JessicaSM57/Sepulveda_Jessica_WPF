@@ -3,7 +3,7 @@
 //Stuff your face I
 //Qualifying weight for heavyweight division of contest?
 
-var weight = 250; //Participant must be 250 pounds minimum to qualify
+var weight = prompt("Please enter your weight."); //Participant must be 250 pounds minimum to qualify
 
 if(weight >= 250){//Person must be 250 pounds or more to qualify
     console.log("The competitor qualifies for the heavyweight division.");
