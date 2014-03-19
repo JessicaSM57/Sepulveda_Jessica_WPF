@@ -6,11 +6,19 @@
 
 //Find out the age of the woodchuck.
 var howOld = prompt("How old is the woodchuck?");
-//NEED VALIDATION
+    //Establish validation:
+    if (howOld == "" || howOld != Number(howOld)){
+    prompt("Answer the question. How many years in whole numbers is the woodchuck in question?");
+    } else {
+    prompt(howOld);
+    }
 
 //Find out how much time will be allotted.
 var time = prompt("Enter the amount of time in minutes.");
-//NEED VALIDATION
+    //Establish validation:
+    if (time == ""){
+    prompt("Please enter the amount of time in minutes.");
+    }
 
 //Set up calculations for >= 4 AND <=1 assuming a woodchuck can only chuck wood at a half rate when these two conditions are present.
 var regRate = 2 * time;
