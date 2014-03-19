@@ -1,22 +1,20 @@
 // Jessica Sepulveda -- 03/17/14 -- Conditionals Worksheet
 
-//Check the Login
-//Correct username = student
-//Correct password = pass
 
-//Set up variables to prompt for givens.
-var userName = prompt("Please enter your username.");
-var password = prompt("Please enter your password.");
+//Movie Ticket Price
+//Given: Time of Movie in whole numbers
+//Age of customer
 
-//If user enters correct username and password, then they will see welcome in console.
-if(userName == "student" && password == "pass"){
-    console.log("Welcome, " + userName + "!");
+var regularPrice = "12.00";
+var age = prompt("How old are you?");
+var ageDiscount = "7.00";
+var matineePrice = "7.00"; // 3pm to 5pm
+var time = prompt("What time is it?");
 
-//If user does not enter correct username AND enters correct password then they will get this prompt.
-}else if(userName != "student" && password == "pass"){
-    console.log("User not found. Try again."); //if username does not match
-
-//If user enters correct username but incorrect password, they get this prompt:
+if(age >= 65 || age <=11){
+    console.log(ageDiscount);
+}else if(time >= 3 && time <= 5){
+    console.log("The ticket price is $" + matineePrice + ".");
 }else{
-    console.log("Password does not match our records.");//if username matches but the password does not
+    console.log("The ticket price is $" + regularPrice + ".");
 }
