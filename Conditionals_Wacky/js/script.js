@@ -22,7 +22,7 @@ var time = prompt("Enter the amount of time in minutes.");
 var regRate = 2 * time;
 
 //If woodchuck is 4 years old or older, AND if woodchuck is 1 year old or younger; then woodchuck follows halfRate
-if(howOld >= 4 || howOld <= 1){
+if(howOld >= 4 || howOld <= 1){ //Used greater than or equal to; Used less than or equal to.
     console.log("A " + howOld + " year old woodchuck can chuck " + .5 * regRate + " logs of wood in " + time + " minutes.");
 
 //Otherwise if first conditions are not true, then woodchuck follows regRate:
