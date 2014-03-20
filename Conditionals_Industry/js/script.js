@@ -15,3 +15,4 @@ var pass = prompt("How many classes have you completed in the last 4 months with
 if(pass == ""){ //Validates if field was left blank.
     pass = prompt("Answer the question. List the numeric value for the number of classes you completed with a grade of D or higher"); //prompts user again for information.
 }
+var pace = pass / 4 * 100; //Calculation used to produce pace and convert pace to a percentage.
