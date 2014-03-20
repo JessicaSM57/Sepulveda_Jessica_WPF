@@ -10,3 +10,8 @@ var gpa = prompt("What is your current Grade Point Average (GPA)?"); //User inpu
 if(gpa == ""){ //Validates that an entry was made by checking if prompt was left blank.
     gpa = prompt("Please enter your GPA."); //Prompts user for information again.
 }
+
+var pass = prompt("How many classes have you completed in the last 4 months with a grade of D or better?"); //User must input #
+if(pass == ""){ //Validates if field was left blank.
+    pass = prompt("Answer the question. List the numeric value for the number of classes you completed with a grade of D or higher"); //prompts user again for information.
+}
