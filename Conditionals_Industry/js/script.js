@@ -22,3 +22,6 @@ if(gpa < 2.0 && pace < 67){ //First condition checks if GPA is below 2.0 AND pac
     console.log("You are on Academic Probation."); //Prints results to console to inform user of outcome.
 }else if(gpa < 2.0 || pace < 67){ //Second condition asks if either gpa or pace are below requirements.
     console.log("You are on Academic Warning."); //Prints results to console to inform user of outcome.
+}else{ //If none of the above cases is true.
+    console.log("You are officially in good academic standing."); //Favorable results are printed to console.
+}
