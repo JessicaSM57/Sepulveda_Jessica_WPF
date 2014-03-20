@@ -25,3 +25,9 @@ if(gpa < 2.0 && pace < 67){ //First condition checks if GPA is below 2.0 AND pac
 }else{ //If none of the above cases is true.
     console.log("You are officially in good academic standing."); //Favorable results are printed to console.
 }
+//Set up ternary to determine next step. If GPA or Pace are below minimums,
+advise1 = (gpa < 2.5 ? "However, you need to pull up your grades." : "Have a great day!");
+console.log(advise1);
+
+advise2 = (gpa < 2.0 || pace < 67 ? "Report to Advising immediately." : "Have a great day!");
+console.log(advise2);
