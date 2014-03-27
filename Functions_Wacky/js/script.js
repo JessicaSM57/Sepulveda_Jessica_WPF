@@ -9,7 +9,11 @@ var likeYou = 0;
 likeYou = likeAbility(quiz);
 console.log("Outside function" + likeYou);
 
-
+if(likeYou >= 4){
+    console.log("Awesome! There is a " + likeYou / 8 * 100 + "% chance that I will like you.");
+}else{
+    console.log("Yikes! There is only a " + likeYou /8 * 100 + "% chance that we will get along.")
+}
 
 function likeAbility(answers){
     console.log(answers[2]);
