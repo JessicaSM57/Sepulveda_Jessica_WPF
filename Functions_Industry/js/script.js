@@ -29,6 +29,11 @@ if(revenue == "" || revenue != Number(revenue)){
     alert("You entered $" + revenue + " total project revenue.")
 }
 
+//Set up a variable to catch the return value
+var revenuePercent = calcProfit(hours, perHour, other, revenue);
+console.log("This is outside the function " + revenuePercent + "%.");
+
+
 
 //Use a function to calculate how much profit will be made.
 function calcProfit (hours1, perHour2 , other3, revenue4){ //Four parameters are established.
