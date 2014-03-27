@@ -33,7 +33,14 @@ if(revenue == "" || revenue != Number(revenue)){
 var revenuePercent = calcProfit(hours, perHour, other, revenue);
 console.log("This is outside the function " + revenuePercent + "%.");
 
-
+//Set up if else if statement using 1 logical operator.
+if(revenuePercent >= 50){
+    console.log("Your profitability will be  " + revenuePercent + "%. Your business is growing!");
+}else if (revenuePercent <= 49 && revenuePercent >= 45){
+    console.log("Your profitability will be " + revenuePercent + "%. You are still afloat -- keep pushing forward.")
+}else{
+    console.log("Your profitability will be " + revenuePercent + "%. You are not making enough profit.")
+}
 
 //Use a function to calculate how much profit will be made.
 function calcProfit (hours1, perHour2 , other3, revenue4){ //Four parameters are established.
