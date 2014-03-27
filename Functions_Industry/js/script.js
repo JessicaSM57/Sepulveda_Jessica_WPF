@@ -28,3 +28,10 @@ if(revenue == "" || revenue != Number(revenue)){
 }else{
     alert("You entered $" + revenue + " total project revenue.")
 }
+
+
+//Use a function to calculate how much profit will be made.
+function calcProfit (hours1, perHour2 , other3, revenue4){ //Four parameters are established.
+    var profit = Math.round((1 - (((hours1 * perHour2) + Number(other3)) / revenue4)) * 100); //Calculation includes 3 arithmetic operators.
+    return profit;
+}
