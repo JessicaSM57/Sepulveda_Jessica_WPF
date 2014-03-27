@@ -1,8 +1,8 @@
-//Circumference of a Circle
-
-function calcCirc(radius) //parameter
+//Stung
+function calcStings(weight)  //parameter
 {
-    var calcCirc = radius * radius * 3.14; //calculation used to find circumference of a circle
-    console.log(calcCirc); //prints result to console
+    var calcStings = weight * 8.666666667;
+    console.log(calcStings);
 }
-calcCirc(2); //calls function to run given a number for radius
+var weight1 = prompt ("enter weight");
+calcStings(weight1);
