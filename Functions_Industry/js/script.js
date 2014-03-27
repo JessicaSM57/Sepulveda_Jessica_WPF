@@ -2,7 +2,7 @@
 //Profitability of a free-lance project in Web Developement
 //Formula: revenue = 1 - (cost / budget)
 
-//Set up variables that will be used in rest of code. Then set up "if else" to check values entered.
+//Set up variables that will be used in rest of code. Then set up "if else" to check validity of values entered.
 var hours = prompt("Enter hours worked.");
 //Set up conditional to check if this was answered.
 if(hours == "" || hours != Number(hours)){
@@ -29,13 +29,12 @@ if(revenue == "" || revenue != Number(revenue)){
     alert("You entered $" + revenue + " total project revenue.")
 }
 
-//Set up a variable to catch the return value
+//Set up a variable to catch the return value from the function.
 var revenuePercent = calcProfit(hours, perHour, other, revenue);
-console.log("This is outside the function " + revenuePercent + "%.");
 
-//Set up if else if statement using 1 logical operator.
+//Set up if else if statement using 2 logical operators.
 if(revenuePercent >= 50){
-    console.log("Your profitability will be  " + revenuePercent + "%. Your business is growing!");
+    console.log("Your profitability will be " + revenuePercent + "%. Your business is growing!");
 }else if (revenuePercent <= 49 && revenuePercent >= 45){
     console.log("Your profitability will be " + revenuePercent + "%. You are still afloat -- keep pushing forward.")
 }else{
