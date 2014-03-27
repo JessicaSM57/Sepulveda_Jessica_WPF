@@ -7,9 +7,11 @@ var weight1 = prompt("How much do you weigh?");
 var heartRate1 = prompt("Enter your average heart rate during the exercise.");
 var time1 = prompt("How long did you exercise?");
 
+//Create a variable that will "catch" our return number
+var total = Math.round(calcFcal(age1, weight1, heartRate1, time1)); //This is calling the function and employs the 4 arguments established above as variables.
 
-////Create function to calculate how many calories a woman burns. Four parameters are established.
-function calcFcal(age, weight, hearRate, time){ //
-    var calories = ((age * 0.074) - (weight * 0.05741) + (hearRate * 0.4472) - 20.4022) * time / 4.184; //Calculation includes at least 2 factors as variables.
+////Create function to calculate how many calories a woman burns.
+function calcFcal(age, weight, hearRate, time){ //Four parameters are established.
+    var calories = ((age * 0.074) - (weight * 0.05741) + (hearRate * 0.4472) - 20.4022) * time / 4.184; //Calculation includes at least 2 factors as variables and uses 4 arithmetic operators.
     return calories; //
 }
