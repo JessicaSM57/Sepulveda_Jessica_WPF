@@ -10,9 +10,9 @@ var time1 = prompt("How long did you exercise?");
 //Create a variable that will "catch" our return number
 var total = Math.round(calcFcal(age1, weight1, heartRate1, time1)); //This is calling the function and employs the 4 arguments established above as variables.
 
-//Set up ternary to print results to console.
+//Set up ternary to print results to console depending on condition satisfied.
 burnedCals = (total > 400 ? "Congratulations! You burned " + total + " calories." : "You only burned " + total + " calories. Try harder next time."); //Used conditional operator other than equals.
-console.log(burnedCals);
+console.log(burnedCals); //Print results to console.
 
 ////Create function to calculate how many calories a woman burns.
 function calcFcal(age, weight, hearRate, time){ //Four parameters are established.
